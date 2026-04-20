@@ -14,21 +14,21 @@
             font-family: 'Inter', sans-serif;
             background-color: #2c3e50;
             background-image: radial-gradient(#34495e 1px, transparent 1px);
-            background-size: 20px 20px;
+            background-size: 10px 10px;
         }
 
         .book-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: calc(100vh - 100px);
-            margin: 20px 0;
+            height: calc(100vh - 50px);
+            margin: 10px 0;
         }
 
         .page {
-            padding: 12px;
+            padding: 6px;
             background-color: #fdfdfd;
-            box-shadow: inset 3px 0 6px rgba(0,0,0,0.1);
+            box-shadow: inset 2px 0 3px rgba(0,0,0,0.1);
             display: flex;
             flex-direction: column;
             border: 1px solid #e2e8f0;
@@ -47,13 +47,13 @@
 
         .page-cover h2 {
             font-family: 'Dancing Script', cursive;
-            font-size: 1.5rem;
+            font-size: 0.75rem;
         }
 
         .photo-frame {
-            border: 6px solid white;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-            height: 60%;
+            border: 3px solid white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+            height: 40%;
             width: 100%;
             object-fit: cover;
             pointer-events: none;
@@ -65,14 +65,14 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 8px;
+            gap: 4px;
             pointer-events: none;
         }
 
         .page-number {
             position: absolute;
-            bottom: 8px;
-            font-size: 10px;
+            bottom: 4px;
+            font-size: 6px;
             color: #94a3b8;
         }
 
@@ -200,13 +200,13 @@
 
         function initBook() {
             pageFlip = new St.PageFlip(bookElement, {
-                width: 280,
-                height: 380,
+                width: 140,
+                height: 190,
                 size: "stretch",
-                minWidth: 200,
-                maxWidth: 600,
-                minHeight: 280,
-                maxHeight: 800,
+                minWidth: 100,
+                maxWidth: 300,
+                minHeight: 140,
+                maxHeight: 400,
                 maxShadowOpacity: 0.5,
                 showCover: true,
                 mobileScrollSupport: false,
