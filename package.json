@@ -1,0 +1,16 @@
+{
+  "name": "mycael-album",
+  "version": "1.0.0",
+  "description": "Álbum Digital Interativo",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win"
+  },
+  "author": "Mycael",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  }
+}
